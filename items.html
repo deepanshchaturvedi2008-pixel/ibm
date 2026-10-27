@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusFind - Lost & Found</title>
+    <link rel="stylesheet" href="items.css">
+    <script src="items.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>CampusFind</h1>
+        <p>Find what's lost. Return what's found.</p>
+    </header>
+
+    <main>
+        <h2>Browse Lost & Found Items</h2>
+        <input id="searchInput" type="search"
+               placeholder="Search name, category or location...">
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="All">All Items</button>
+            <button class="filter-btn" data-filter="Lost">Lost</button>
+            <button class="filter-btn" data-filter="Found">Found</button>
+        </div>
+
+        <p id="resultCount"></p>
+        <section id="itemsContainer" class="items-grid"></section>
+        <p id="emptyMessage" hidden>No matching items found.</p>
+    </main>
+</body>
+</html>
